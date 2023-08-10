@@ -17,7 +17,7 @@ const BezierEdge: FunctionalComponent<BezierEdgeProps> = function (
       (sourcePosition === Position.Top && targetPosition === Position.Bottom)
     ) {
       const source = attrs.sourceNode as GraphNode
-      controlOffsetX = ((-40 - source.dimensions.width / 2) * 4) / 3
+      controlOffsetX = ((40 + source.dimensions.width / 2) * 4) / 3
       controlOffsetY = 0
     } else if (
       (sourcePosition === Position.Left && targetPosition === Position.Right) ||

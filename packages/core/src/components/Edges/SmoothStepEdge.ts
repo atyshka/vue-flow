@@ -16,7 +16,7 @@ const SmoothStepEdge: FunctionalComponent<SmoothStepEdgeProps> = function (
       (sourcePosition === Position.Top && targetPosition === Position.Bottom)
     ) {
       const source = attrs.sourceNode as GraphNode
-      centerX = props.sourceX - (props.offset ?? 40) - source.dimensions.width / 2
+      centerX = props.sourceX + (props.offset ?? 40) + source.dimensions.width / 2
       centerY = (props.sourceY + props.targetY) / 2
     } else if (
       (sourcePosition === Position.Left && targetPosition === Position.Right) ||
